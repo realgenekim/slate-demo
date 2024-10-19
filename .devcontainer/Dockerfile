@@ -13,3 +13,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
 
 # Install global npm packages if needed
 RUN npm install -g typescript
+
+# gk: is startup performance ok?
+RUN npm install
