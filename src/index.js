@@ -1,29 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Editor from './components/Editor';
-
-const initialValue = [
-  {
-    type: 'paragraph',
-    children: [{ text: 'First paragraph.' }],
-  },
-  {
-    type: 'paragraph',
-    children: [{ text: 'Second paragraph.' }],
-  },
-  {
-    type: 'paragraph',
-    children: [{ text: 'Third paragraph.' }],
-  },
-  {
-    type: 'paragraph',
-    children: [{ text: 'Fourth paragraph.' }],
-  },
-];
+import { BasicOutliner, initialOutline } from './components/BasicOutliner';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Editor initialValue={initialValue} />
+    <BasicOutliner initialValue={initialOutline} />
   </React.StrictMode>,
   document.getElementById('root')
 );
