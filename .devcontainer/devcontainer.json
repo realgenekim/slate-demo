@@ -1,0 +1,16 @@
+{
+  "name": "My Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/universal",
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
